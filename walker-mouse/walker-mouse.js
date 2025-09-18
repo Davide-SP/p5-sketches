@@ -24,15 +24,15 @@ class Walker {
   
   show () {
     fill(89, 172, 248);
-    stroke(255)
+    stroke(85, 70, 206);
     circle(this.x, this.y, this.d);
   }
   
   walk () {
     const odd = random(1);
     
-    let xstep = 1;
-    let ystep = 1;
+    let xstep = 2;
+    let ystep = 2;
     
   if (odd < 0.5) {
     
