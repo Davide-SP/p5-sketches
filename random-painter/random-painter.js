@@ -4,6 +4,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(245, 241, 230);
   noStroke();
+  frameRate(30);
   
   // scegli un colore "tema" una volta
   baseR = random(100, 200);
@@ -29,4 +30,5 @@ function mousePressed() {
   baseG = random(100, 200);
   baseB = random(100, 200);
 }
+
 
