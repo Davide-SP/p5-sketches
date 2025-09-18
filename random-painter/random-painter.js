@@ -1,24 +1,32 @@
-let x, y, r, g, b, a, rg;
-rg = 20;
+let baseR, baseG, baseB;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background (245, 241, 230);
+  background(245, 241, 230);
+  noStroke();
+  
+  // scegli un colore "tema" una volta
+  baseR = random(100, 200);
+  baseG = random(100, 200);
+  baseB = random(100, 200);
 }
 
 function draw() {
+  // variazioni limitate intorno al colore base
+  let r = baseR + random(-30, 30);
+  let g = baseG + random(-30, 30);
+  let b = baseB + random(-30, 30);
   
-x = random(width);
-y = random(height);
-r = random(50, 255);
-g = random(50, 255);
-b = random(50, 255);
-// a = random (1, 10);
-noStroke();
-fill (r, g, b);
-circle(mouseX, mouseY, random(20, 70))
+  // aggiungo alpha per maggiore morbidezza
+  fill(r, g, b, 150); 
+  circle(mouseX, mouseY, random(20, 40));
 }
 
 function mousePressed() {
-  background (245, 241, 230);
+  // reset sfondo e scegli una nuova palette
+  background(245, 241, 230);
+  baseR = random(100, 200);
+  baseG = random(100, 200);
+  baseB = random(100, 200);
 }
+
