@@ -9,7 +9,7 @@ const line1Input = document.querySelector("input.line1");
 const line2Input = document.querySelector("input.line2");
 
 function preload () {
-font = loadFont("/assets/spacegrotesk-medium.otf");
+font = loadFont("assets/spacegrotesk-medium.otf");
 }
 
 function setup () {
