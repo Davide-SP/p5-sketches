@@ -42,8 +42,9 @@ function setup() {
   for(let i = 0; i < 20; i++) {
     let x = random(width);
     let y = random(height);
-    let r = random(20, 50);
+    let r = random(10, 40);
     bubbles[i] = new Bubble(x, y, r);
+    frameRate(30);
   }
 }
 
@@ -65,4 +66,5 @@ function draw() {
     b.changeColor(overlapping); // acceso se sovrapposta, spento altrimenti
   }
 }
+
 
