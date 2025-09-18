@@ -4,6 +4,7 @@ let dist = x/2
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+frameRate(30);
 }
 
 function draw() {
@@ -44,5 +45,6 @@ function mousePressed () {
   
   
 }
+
 
 
