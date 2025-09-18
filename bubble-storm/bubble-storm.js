@@ -2,7 +2,7 @@ let bubbles = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  
+  frameRate(30);
 }
 
 function draw() {
@@ -53,4 +53,5 @@ class Bubble {
     ellipse (this.x, this.y, 20)
   }
 }
+
 
