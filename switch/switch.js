@@ -1,5 +1,5 @@
 let on = false;
-let x = 200
+let x = 100
 let dist = x/2
 
 function setup() {
@@ -44,4 +44,5 @@ function mousePressed () {
   
   
 }
+
 
