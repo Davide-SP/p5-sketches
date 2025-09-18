@@ -5,7 +5,7 @@ let direction = 1;
 function setup() {
   createCanvas(windowWidth, windowHeight);
 angleMode(DEGREES);
- 
+ frameRate(30);
 }
 
 function draw() {
@@ -30,3 +30,4 @@ function draw() {
     direction *= -1; // Inverti la direzione della rotazione
   }
 }
+
