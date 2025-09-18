@@ -27,7 +27,7 @@ class Bubble {
   constructor(x, y) {
     this.x = x;
     this.y = y;
-    this.r = 10;
+    this.r = 20;
     this.velx = random(-2, 2);
     this.vely = random(-2, 2);
   }
@@ -50,6 +50,7 @@ class Bubble {
   draw () {
     fill(31, 77, 113);
     noStroke();
-    ellipse (this.x, this. y, 10)
+    ellipse (this.x, this.y, 20)
   }
 }
+
