@@ -8,26 +8,24 @@ function setup() {
 
 function draw() {
   
-  stroke (255, 229, 180);
+  noStroke();
   if (on) {
-    background (255, 229, 180);
-    stroke (0);
-    fill(255, 140, 122);
+    background (255, 209, 102);
+    fill (239, 71, 111);
+    
   } else {
-    background (255, 140, 122);
-    stroke (0);
+    background (239, 71, 111);
   }
   
   if (mouseX > (windowWidth/2 - dist) && mouseX < (windowWidth/2 + dist) && mouseY > 
 			(windowHeight/2 - dist) && mouseY < (windowHeight/2 + dist)) {
     
-    fill (184, 225, 160);
+    fill (6, 214, 160);
   }
   
   
-  strokeWeight (3);
   rect(windowWidth/2, windowHeight/2, x);
-  fill(255, 229, 180);
+  fill(255, 209, 102);
   rectMode (CENTER);
 }
 
@@ -46,3 +44,4 @@ function mousePressed () {
   
   
 }
+
