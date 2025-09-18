@@ -19,6 +19,7 @@ class Walker {
     this.x = width/2;
     this.y = height/2;
     this.d = 20;
+    frameRate(30);
   
   }
   
@@ -58,3 +59,4 @@ class Walker {
 } 
   
 }
+
