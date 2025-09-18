@@ -31,15 +31,15 @@ class Bubble {
   }
 
   move() {
-    this.x += random(-5, 5);
-    this.y += random(-5, 5);
+    this.x += random(-3, 3);
+    this.y += random(-3, 3);
   }
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
 
-  for(let i = 0; i < 15; i++) {
+  for(let i = 0; i < 20; i++) {
     let x = random(width);
     let y = random(height);
     let r = random(20, 50);
@@ -65,3 +65,4 @@ function draw() {
     b.changeColor(overlapping); // acceso se sovrapposta, spento altrimenti
   }
 }
+
